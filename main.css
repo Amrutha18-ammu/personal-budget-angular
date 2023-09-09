@@ -1,13 +1,10 @@
- html,body{
+ html, body{
     font-size: 10px;
     font-family: 'Times New Roman', Times, serif;
 }
 
-h1 {
-    font-size: 4.3em ;
-}
 
-nav{
+nav { 
     width: 100%;
     background-color: slategrey ;
     height: 44px;
@@ -20,10 +17,11 @@ nav ul li {
     padding: 0;
     list-style: none;
     display: inline-block;
+    cursor: pointer;
 }
 
 
-nav ul li  a{
+nav ul li a {
     display: block;
     padding: 0 20px;
     line-height: 44px;
@@ -47,6 +45,7 @@ header{
     background-position: center bottom;
     padding-top: 40px;   
 }
+
 header h1, 
 header h2 {
     text-align: center;
@@ -60,21 +59,7 @@ header h1 {
 header h2 {
     color: #4d5791
 }
- main {
-    padding: 40px;
-    max-width: 768px;
- }
 
-.center{
-    text-align: center;
-}
-
-main article {
-    width: 100%;
-    max-width: 340px;
-    text-align: justify;
-    margin:0;
-}
 
 footer{
     width: 100%;
@@ -86,9 +71,84 @@ footer{
     margin:10px;
 }
 
-@media screen  and (min-width: 768px) {
-    main article{
+
+.container {
+    padding: 40px;
+    width: 100%;
+}
+
+.page-area {
+    max-width: 768px;
+    display: inline-block;
+}
+
+.bottom {
+    height: 50px;
+    background-color: #b4c6f0;
+    padding: 40px;
+}
+
+.center {
+    text-align: center;
+}
+
+.container article.text-area{
+    display: inline-block;
+    width: 100%;
+    max-width: 340px;
+    text-align: justify;
+    margin: 20px;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+footer{
+    width: 100%;
+    height: 44px; 
+    background-color: slategrey;
+    padding: 0 40px;
+    font-size: 1.4em;
+    text-align: center;
+    margin:10px;
+}
+@media screen and (min-width: 768px) {
+    .container .article.text-area {
         margin: 10px;
     }
+}
+
+
+.login-text-area{
+        text-align: center;
     
+}
+.login-text{
+    width: 100%;
+    max-width: 340px;
+    text-align: justify;
+    margin: 0;
+    font-size: 10px;
+}
+
+.about-text-area{
+    text-align: center;
+
+}
+.about-text{
+    width: 100%;
+    max-width: 340px;
+    text-align: justify;
+    margin: 0;
+    font-size: 10px;
 }
