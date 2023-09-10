@@ -144,15 +144,6 @@ footer{
     margin: 0;
     font-size: 10px;
 }
-button {
-    display: inline-block;
-        background-color: darkblue;
-        padding: 15px;
-        width: 100px;
-        color: #ffffff;
-        text-align: center;
-       
-      }
 
       #myBtn {
         display: none;
