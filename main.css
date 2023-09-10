@@ -1,7 +1,8 @@
  html, body{
-    font-size: 11px;
+    font-size: 13px;
     font-family: 'Times New Roman', Times, serif;
 }
+
 
 
 nav { 
@@ -36,8 +37,8 @@ nav ul li a:hover {
     color: lavender;
 }
 
-header{
-    height: 350px;
+header {
+    height: 450px;
     background-color:#b4c6f0;
     background-image: url('/bg.png');
     background-size: 400px;
@@ -52,7 +53,7 @@ header h2 {
     margin:0;
 }
 header h1 {
-    color: azure;
+    color: white;
     font-size: 4.2em;
     margin-bottom: 20px;
 }
@@ -92,15 +93,6 @@ footer{
     text-align: center;
 }
 
-.container article.text-area{
-    display: inline-block;
-    width: 100%;
-    max-width: 340px;
-    text-align: justify;
-    margin: 20px;
-    height: 105px;
-}
-
 
 
 * {
@@ -124,7 +116,7 @@ footer{
     margin:10px;
 }
 @media screen and (min-width: 768px) {
-    .container .article.text-area {
+    .section-area .article.text-area {
         margin: 10px;
     }
 }
@@ -132,7 +124,6 @@ footer{
 
 .login-text-area{
         text-align: center;
-    
 }
 .login-text{
     width: 100%;
@@ -182,3 +173,55 @@ button {
       #myBtn:hover {
         background-color: #555;
       }
+
+    .section-area {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .text-area {
+        display: flex;
+        flex: 50%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .options-area {
+        align-items: center;
+        justify-content: center;
+        max-width: 400px;
+    }
+    
+ .sign-up-btn {
+    border-style: none;
+    border-radius: 93px;
+    z-index: 48;
+    width: 421px;
+    height: 70px;
+    background: rgba(255,255,255,1);
+    box-shadow: none;
+    text-shadow: none;
+    color: #061A36;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, sans-serif;
+    font-style: normal;
+    text-align: center;
+    background-repeat: no-repeat;
+    }
+    
+    .sign-up-area {
+        background-color: #b4c6f0;
+        padding: 40px;
+    }
+
+    .sign-up-btn:hover {
+        background-color:white;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    
