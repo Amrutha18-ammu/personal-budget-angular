@@ -210,6 +210,10 @@ footer{
         padding: 40px;
     }
 
+    .chart-area {
+        padding: 40px;
+    }
+
     .sign-up-btn:hover {
         background-color:white;
         cursor: pointer;
