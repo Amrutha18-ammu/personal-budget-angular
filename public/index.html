@@ -1,0 +1,189 @@
+
+  <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href = "reset.css"/>
+        <link rel="stylesheet" href = "main.css"/>
+        <title>Personal budget application</title>
+      
+        <!-- HTML Meta Tags -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+       
+      
+        <!-- Google / Search Engine Tags -->
+        <meta itemprop="name" content="budget application">
+        <meta itemprop="description" content="budget application to manage finances">
+        <meta itemprop="image" content="bg.png">
+        <link rel="amphtml" href="https://www.cnbc.com/amp/select/best-budgeting-apps/">
+       <link rel="amphtml"  href="https://www.nerdwallet.com/article/finance/best-budget-apps">
+        <!-- End Google / Search Engine Tags -->
+    </head>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+            
+       <nav>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="https://google.com">Google</a></li>
+         </ul>
+       </nav>
+         <header>
+            <h1>Personal Budget Application</h1>
+            <h2>Spend, save, and give toward what's important in life by best managing your budget</h2>
+         </header>
+         <main class="container center">
+            <section class="section-area">
+               <article class="text-area">
+                   <h1 class="options-area">Stay on track with you budget</h1>
+                   <p class="options-area">
+                    Do you know where you are spending your money? If you really stop to track it down,
+                    you would get surprised! Proper budget management depends on real data... and this
+                    app will help you with that!
+                   </p>
+               </article>
+               <article class="text-area">
+                   <h1 class="options-area">Alerts on over the budget</h1>
+                   <p class="options-area">
+                    What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
+                    </p>
+               </article>
+               <article class="text-area">
+                   <h1 class="options-area">Results</h1>
+                   <p class="options-area">
+                    People who stick to a financial plan, budgeting every expense, get out of debt faster!
+                    Also, they to live happier lives... since they expend without guilt or fear... 
+                    because they know it is all good and accounted for.
+                    </p>
+               </article>
+               <article class="text-area">
+                   <h1 class="options-area">Free Budgeting APP</h1>
+                   <p class="options-area">
+                    This app is free!!! And you are the only one holding your data!
+                   </p>
+               </article>
+               <article class="text-area">
+                   <h1 class="options-area">Stay on track</h1>
+                   <p class="options-area">
+                    Do you know where you are spending your money? If you really stop to track it down,
+                    you would get surprised! Proper budget management depends on real data... and this
+                    app will help you with that!
+                   </p>
+               </article>
+               <article class="text-area">
+                   <h1 class="options-area">Alerts</h1>
+                   <p class="options-area">
+                    What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
+                   </p>
+               </article>
+       
+               <article class="text-area">
+                   <h1 class="options-area">Results</h1>
+                   <p class="options-area" >
+                    People who stick to a financial plan, budgeting every expense, get out of debt faster!
+                    Also, they to live happier lives... since they expend without guilt or fear... 
+                    because they know it is all good and accounted for.
+                   </p>
+               </article>
+       
+               <article class="text-area">
+                   <h1 class="options-area">Chart</h1>
+                   <p class="options-area">
+                    <canvas id ="myChart" width="400" height="'400"></canvas>
+                   </p>
+               </article>
+           </section>
+
+          </main>
+
+          <section class="sign-up-area center">
+            <h1>To efficiently manage your money</h1>
+            <a href="signup.html">
+              <button class="sign-up-btn">Sign Up Today</button>
+           </a>
+          </section>
+      </div>
+         <footer>
+            <div class ="center" >All rights reserved &copy;</div>
+         
+         </div>
+         </footer>
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js" integrity="sha512-aoTNnqZcT8B4AmeCFmiSnDlc4Nj/KPaZyB5G7JnOnUEkdNpCZs1LCankiYi01sLTyWy+m2P+W4XM+BuQ3Q4/Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js" integrity="sha512-G8JE1Xbr0egZE5gNGyUm1fF764iHVfRXshIoUWCTPAbKkkItp/6qal5YAHXrxEu4HNfPTQs6HOu3D5vCGS1j3w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>     
+         <script>
+          var dataSource = {
+             datasets: [
+               {
+                 data: [],
+                 backgroundColor: [
+                  '#ffcd56',
+                  '#ff6384',
+                  '#36a2eb',
+                  '#fd6b19'
+                 ]
+               }
+             ],
+             labels: [
+             ]
+          };
+
+          function createChart() {
+            var ctx = document.getElementById("myChart").getContext('2d');
+            var myPieChart = new Chart(ctx, {
+              type: 'pie',
+              data: dataSource
+
+            });      
+          }
+
+          function getBudget(){
+            axios.get('/budget')
+             .then((res) => {
+               console.log(res);
+               for ( var i = 0; i < res.data.myMonthlyBudget.length; i++) {
+                 dataSource.datasets[0].data[i] = res.data.myMonthlyBudget[i].budget;
+                 dataSource.labels[i] = res.data.myMonthlyBudget[i].title;
+               }
+               console.log(dataSource);
+               createChart();
+             })
+          
+          }
+          getBudget();
+         </script>
+      
+    
+    
+    </body>
+    </html> 
+
