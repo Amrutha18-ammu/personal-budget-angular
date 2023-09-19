@@ -212,6 +212,8 @@ footer{
 
     .chart-area {
         padding: 40px;
+        width: 900px;
+        height: 400px;
     }
 
 .sign-up-btn:hover {

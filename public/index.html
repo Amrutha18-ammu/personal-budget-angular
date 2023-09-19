@@ -179,7 +179,7 @@
           }
 
           function getBudget(){
-            axios.get('/budget')
+            axios.get('http://localhost:3000/budget')
              .then((res) => {
                console.log(res);
                for ( var i = 0; i < res.data.myMonthlyBudget.length; i++) {
