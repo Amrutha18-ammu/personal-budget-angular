@@ -3,8 +3,6 @@ html, body{
   font-family: 'Times New Roman', Times, serif;
 }
 
-
-
 nav {
   width: 100%;
   background-color: slategrey ;
@@ -12,30 +10,6 @@ nav {
   padding: 0 40px;
 }
 
-nav ul,
-nav ul li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: inline-block;
-  cursor: pointer;
-}
-
-
-nav ul li a {
-  display: block;
-  padding: 0 20px;
-  line-height: 44px;
-  font-size: 1.4em;
-  text-decoration: none;
-  color: antiquewhite;
-  margin:0;
-}
-
-nav ul li a:hover {
-  background-color:white;
-  color: lavender;
-}
 
 header {
   height: 450px;

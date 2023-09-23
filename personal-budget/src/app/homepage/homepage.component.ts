@@ -1,6 +1,7 @@
 import { AfterViewInit, Component,  } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import Chart from 'chart.js/auto';
+import { DataServiceService } from '../data-service.service';
 
 
 @Component({
@@ -28,18 +29,18 @@ export class HomepageComponent implements AfterViewInit {
     labels: []
   };
 
-  constructor(private http: HttpClient) {
+  constructor(private dataService: DataServiceService) {
     const el = document.getElementById('myChart');
     console.log('Is my chart there?' , el);
    }
 
   ngAfterViewInit(): void {
-    this.http.get('http://localhost:3000/budget')
+    this.dataService.getMyBudget()
     .subscribe((res:any)=> {
       let test = 'amrutha'
-      for ( var i = 0; i < res.myMonthlyBudget.length; i++) {
-        this.dataSource.datasets[0].data[i] = res.myMonthlyBudget[i].budget;
-        this.dataSource.labels[i] = res.myMonthlyBudget[i].title;
+      for ( var i = 0; i < res.length; i++) {
+        this.dataSource.datasets[0].data[i] = res[i].budget;
+        this.dataSource.labels[i] = res[i].title;
       }
       this.createChart();
     });
